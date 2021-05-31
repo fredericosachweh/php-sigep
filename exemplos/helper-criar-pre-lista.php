@@ -7,6 +7,16 @@
  */
 
 
+    require_once __DIR__ . '/bootstrap-exemplos.php';
+
+    // echo json_encode($_POST);
+    
+    $nome = $_POST['name'] ?? 'sem nome';
+    
+
+    // $nome = $_POST['name'] ?? 'sem nome';
+    // echo $nome;
+
 // ***  DADOS DA ENCOMENDA QUE SERÁ DESPACHADA *** //
     $dimensao = new \PhpSigep\Model\Dimensao();
     $dimensao->setAltura(20);
@@ -16,7 +26,7 @@
     $dimensao->setTipo(\PhpSigep\Model\Dimensao::TIPO_PACOTE_CAIXA);
 
     $destinatario = new \PhpSigep\Model\Destinatario();
-    $destinatario->setNome('Bruno Reis Marques');
+    $destinatario->setNome($nome);
     $destinatario->setLogradouro('Rua São Francisco Xavier');
     $destinatario->setNumero('381');
     $destinatario->setComplemento('apto 405');
