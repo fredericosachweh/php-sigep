@@ -9,9 +9,9 @@
 
     require_once __DIR__ . '/bootstrap-exemplos.php';
 
-    // echo json_encode($_POST);
+    echo json_encode($_POST);
     
-    $nome = $_POST['name'] ?? 'sem nome';
+    // $nome = $_POST['name'] ?? 'sem nome';
     
 
     // $nome = $_POST['name'] ?? 'sem nome';
