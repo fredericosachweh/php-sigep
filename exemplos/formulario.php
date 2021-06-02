@@ -38,7 +38,7 @@
 </style>
 <body>
   <?php 
-      $action = 'http://localhost:9000/exemplos/helper-criar-pre-lista.php';
+      $action = '/exemplos/helper-criar-pre-lista.php';
   ?>
 
   <form target="_blank" class="form-php" action="<?php echo $action; ?>" method="POST">
